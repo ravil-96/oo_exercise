@@ -17,10 +17,10 @@ class CLI():
     def start(self):
         print(f'\n{Format.BLUE}{Format.BOLD}Beware! Magic Repos are coming...{Format.CLEAR}\n')
         fetch_repos()
-        self.
+        self.menu()
     
     def menu(self):
-        for ids, repo in enumerate(Repo.all, start=1):
+        for idx, repo in enumerate(Repo.all, start=1):
             print(f'{idx}. {repo.name}')
         self.get_user_choice()
 

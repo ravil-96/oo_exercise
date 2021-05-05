@@ -1,7 +1,7 @@
 import requests
 from .repo import Repo
 
-URL = f'https://api.github.com/users/{username}/repos'
+URL = 'https://api.github.com/users/ravil-96/repos'
 
 def fetch_repos():
     ''' Call to API of GitHub'''
